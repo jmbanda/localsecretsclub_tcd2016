@@ -29,6 +29,16 @@ function moveMapToLocation(map){
 }
 
 /**
+ * Adds markers to the map highlighting the locations of the captials of
+ * France, Italy, Germany, Spain and the United Kingdom.
+ *
+ * @param  {H.Map} map      A HERE Map instance within the application
+ */
+function addMarkersToMap(map) {
+  var userMarker = new H.map.Marker({lat:37.7756433, lng:-122.3867432});
+  map.addObject(userMarker);
+}
+/**
  * Boilerplate map initialization code starts below:
  */
 
@@ -52,6 +62,7 @@ var ui = H.ui.UI.createDefault(map, defaultLayers);
 
 // Now use the map as required...
 moveMapToLocation(map);
+addMarkersToMap(map);
   </script>
 </body>
 </html>
