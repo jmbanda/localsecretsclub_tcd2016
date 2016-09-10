@@ -63,8 +63,8 @@ function onSuccess(result) {
   */
   addRouteShapeToMap(route);
   addManueversToMap(route);
-  addWaypointsToPanel(route.waypoint);
-  addManueversToPanel(route);
+  //addWaypointsToPanel(route.waypoint);
+  //addManueversToPanel(route);
   
   //addSummaryToPanel(route.summary);
   // ... etc.
@@ -101,7 +101,7 @@ var defaultLayers = platform.createDefaultLayers();
 //Step 2: initialize a map - this map is centered over Berlin
 var map = new H.Map(mapContainer,
   defaultLayers.normal.map,{
-  center: {lat:52.5160, lng:13.3779},
+  center: {lat:37.7756433, lng:-122.3867432},
   zoom: 13
 });
 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <link rel="stylesheet" type="text/css"
+    href="https://js.api.here.com/v3/3.0/mapsjs-ui.css" />
+  <script type="text/javascript" charset="UTF-8"
+    src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+
+</head>
+<body>
+  <div id="map" style="width: 360px; height: 640px; background: grey" />
+  <script  type="text/javascript" charset="UTF-8" >
+    
+/**
+ * Moves the map to display over Berlin
+ *
+ * @param  {H.Map} map      A HERE Map instance within the application
+ */
+function moveMapToLocation(map){
+  map.setCenter({lat:37.7756433, lng:-122.3867432});
+  map.setZoom(14);
+}
+
+/**
+ * Boilerplate map initialization code starts below:
+ */
+
+var platform = new H.service.Platform({
+  app_id: 'GE1iiRuLh2VtVIG24xL6',
+  app_code: 'wP3VKj9zEuunW8iAi8_L3g',
+  useCIT: true,
+  useHTTPS: true
+});
+var defaultLayers = platform.createDefaultLayers();
+
+var map = new H.Map(document.getElementById('map'),
+  defaultLayers.normal.map);
+
+// MapEvents enables the event system
+// Behavior implements default interactions for pan/zoom (also on mobile touch environments)
+var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+// Create the default UI components
+var ui = H.ui.UI.createDefault(map, defaultLayers);
+
+// Now use the map as required...
+moveMapToLocation(map);
+  </script>
+</body>
+</html>
