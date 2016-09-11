@@ -2,12 +2,10 @@
 TechCrunch Disrupt 2016 Submission
 
 ## Inspiration
-When visiting a new city, there is an overwhelming amount of information of things that you can do. 
+Every local person has its favorite place he frequently visits: like favorite parks, restaurants, or hikes. But for people visiting a new city, it’s overwhelming and time consuming to make a decision. Now if you’re a local you can share your favorite places and get rewards for that. 
 
 ## What it does
 LocalSecrets.club brings the community together around common interests. With LocalSecrets.club is simple, personal and fun. 
-
-Every local person has its favorite place he frequently visits: like favorite parks, restaurants, or hikes. What if you can be rewarded for his knowledge by haring it with new city explorers. 
 
 LocalSecrets.club is a community of city explorers. Here you can quickly find the closest places near you, frequented by a local. If you liked the place, you can reward the local for his recommendation. 
 
