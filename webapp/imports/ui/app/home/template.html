@@ -1,0 +1,65 @@
+<nav class="navbar navbar-default navbar-static-top" style="margin-bottom: 0">
+	<div class="navbar-header">
+		<a class="navbar-toggle" toggle="collapse" target=".navbar-collapse" style="position: absolute; border: none; color: #fff" ng-if="!h.details">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar" style="background-color: #fff"></span>
+			<span class="icon-bar" style="background-color: #fff"></span>
+			<span class="icon-bar" style="background-color: #fff"></span>
+		</a>
+		<a class="navbar-brand" style="color: #fff; position: absolute" ng-if="h.details" ng-click="h.details = null">
+			<i class="fa fa-chevron-left"></i>
+		</a>
+		<a class="navbar-brand" style="color: #fff; width: 100%; text-align: center; font-size: 16px; font-weight: bold">LocalSecrets.Club</a>
+	</div>
+</nav>
+<div id="map"></div>
+<div style="position: absolute; bottom: 60px; left: 20px; right: 20px; font-size: 22px; margin-right: 50px" class="input-group input-group-lg" ng-hide="h.details">
+	<input type="text" class="form-control" ng-model="h.filter" />
+	<span class="input-group-btn">
+		<a class="btn btn-default" ng-click="h.search()" style="background-color: #007CD6; color: #fff">
+			<i class="fa fa-search"></i>
+		</a>
+	</span>
+</div>
+<div style="position: absolute; bottom: 0; left: 0; right: 0; background-color: #fff; z-index: 1" ng-if="h.details">
+	<div class="col-xs-12">
+		<div class="row">
+			<div style="text-align:center; height: 60px; margin: auto">
+				<div style="position: absolute; left: 0; right: 0; top: -32.5px">
+					<img src="/lisa.png" style="margin: 0 auto" />
+				</div>
+				<span style="margin-top: 35px; font-size: 16px; font-weight: bold; position: absolute; left: 0; right: 0">Lisa Cuddy</span>
+			</div>
+		</div>
+		<div class="row" style="margin: 15px -15px">
+			<div class="col-xs-8">
+				<b>{{h.details.title}}</b>
+				<div ng-bind-html="h.cleanSce(h.details.vicinity)"></div>
+			</div>
+			<div class="col-xs-3">
+				<a ui-sref="app.thanks({u: h.details.userId})" class="btn btn-default" style="color: #007CD6; border-color: #007CD6">Say Thanks</a>
+			</div>
+		</div>
+		<div class="row" style="margin: 15px -15px">
+			<div class="col-xs-12">
+				They have the best cocktails I've ever had!
+			</div>
+		</div>
+
+		<div class="row">
+			<img ng-src="{{h.place.image}}" style="width: 100%" />
+		</div>
+
+		<div class="row" style="font-size: 32px; text-align: center; margin-top: 7.5px; margin-bottom: 7.5px">
+			<div class="col-xs-4" style="color: #007CD6">
+				<i class="fa fa-search"></i>
+			</div>
+			<div class="col-xs-4" style="color: #999">
+				<i class="fa fa-comment-o"></i>
+			</div>
+			<div class="col-xs-4" style="color: #999">
+				<i class="fa fa-user"></i>
+			</div>
+		</div>
+	</div>
+</div>

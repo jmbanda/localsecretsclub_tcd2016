@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="45px" viewBox="0 0 36 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Place icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile-App" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="See-results" transform="translate(-91.000000, -237.000000)" fill="#007CD6">
+            <g id="Place-icon" transform="translate(91.000000, 237.000000)">
+                <path d="M18,0.272727273 C8.23846154,0.272727273 0.346153846,8.04545455 0.346153846,17.7272727 C0.346153846,20.25 1.03846154,22.9090909 1.8,24.75 C7.13076923,36 17.5846154,44.7272727 18,44.7272727 C18.4153846,44.7272727 28.8692308,36 34.2,24.6136364 C34.9615385,22.7727273 35.6538462,20.1136364 35.6538462,17.5909091 C35.6538462,8.04545455 27.7615385,0.272727273 18,0.272727273 L18,0.272727273 Z M18,31.7727273 C10.0384615,31.7727273 3.6,25.4318182 3.6,17.5909091 C3.6,9.75 10.0384615,3.40909091 18,3.40909091 C25.9615385,3.40909091 32.4,9.75 32.4,17.5909091 C32.4,25.4318182 25.9615385,31.7727273 18,31.7727273 L18,31.7727273 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

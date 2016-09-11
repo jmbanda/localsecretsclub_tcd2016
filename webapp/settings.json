@@ -1,0 +1,16 @@
+{
+	"public": {
+		"here": {
+			"app_id": "ctyyJVTr57wPzIjnPujE",
+			"app_code": "OQeUE3CPY5YXY8AYj5EzAA",
+			"useCIT": true,
+			"useHTTPS": true
+		}
+	},
+	"braintree": {
+		"merchantId": "6p8y99c3c3f2m2xs",
+		"publicKey": "rvrdzc8q756ryyv3",
+		"privateKey": "62b32c4c85d85e36a4370e971abfdc74",
+		"sandbox": true
+	}
+}

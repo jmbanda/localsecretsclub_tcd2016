@@ -1,0 +1,37 @@
+<nav class="navbar navbar-default navbar-static-top" style="margin-bottom: 0">
+	<div class="navbar-header">
+		<a class="navbar-brand" ng-click="t.cancel(t.step==1? -1 : -2)" style="position: absolute; color: #fff; font-size: 16px">Cancel</a>
+		<a class="navbar-brand" style="color: #fff; width: 100%; text-align: center; font-size: 16px; font-weight: bold">Say thanks</a>
+		<button type="button" class="navbar-brand btn btn-link" ng-click="t.pay()" style="position: absolute; right: 0; color: #fff; font-size: 16px" ng-hide="!t.amount || t.amount<1" ng-if="t.step==1">Next</button>
+	</div>
+</nav>
+<div class="col-xs-12" ng-form="form" ng-if="t.step==1">
+	<div class="row" style="background-color: #eee; padding-top: 15px; padding-bottom: 15px; border-bottom: #ddd 1px solid">
+		<div class="col-xs-3">
+			<img src="/lisa.png"/>
+		</div>
+		<div class="col-xs-8" style="height: 65px; padding-top: 22px; font-size: 16px">
+			Add a tip for Lisa Cuddy
+		</div>
+	</div>
+	<div class="col-xs-12" ng-class="{'has-error': form.amount.$invalid}" style="padding-top: 30px">
+		<div class="input-group input-group-lg">
+			<span class="input-group-addon">$</span>
+			<input type="number" class="form-control" name="amount" ng-model="t.amount" required min="1" autofocus/>
+		</div>
+	</div>
+</div>
+<div class="col-xs-12" ng-form="form2" ng-show="t.step==2">
+	<div class="row" style="background-color: #eee; padding-top: 15px; padding-bottom: 15px; border-bottom: #ddd 1px solid">
+		<div class="col-xs-3">
+			<img src="/lisa.png"/>
+		</div>
+		<div class="col-xs-8" style="height: 65px; padding-top: 22px; font-size: 16px">
+			Add a tip for Lisa Cuddy
+		</div>
+	</div>
+	<form name="paymentForm">
+		<div id="payment-form" style="padding-top: 20px"></div>
+		<button type="submit" class="btn btn-block btn-primary" ng-disabled="t.disablePay">Complete</button>
+	</form>
+</div>
