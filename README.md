@@ -1,5 +1,5 @@
 # LocalSecrets.Club
-TechCrunch Disrupt 2016 Submission
+TechCrunch Disrupt 2016 Submission - Winner of BraintTree integration prize: https://devpost.com/software/localsecretsclub_tcd2016
 
 ## Inspiration
 Every local person has its favorite place he frequently visits: like favorite parks, restaurants, or hikes. But for people visiting a new city, it’s overwhelming and time consuming to make a decision. Now if you’re a local you can share your favorite places and get rewards for that. 
